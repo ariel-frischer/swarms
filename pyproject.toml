@@ -76,6 +76,7 @@ black = "*"
 swarms-cloud = "*"
 aiofiles = "*"
 swarm-models = "*"
+numpy = "1.26.4"
 
 [tool.poetry.group.lint.dependencies]
 black = ">=23.1,<25.0"
