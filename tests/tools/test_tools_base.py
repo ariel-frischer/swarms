@@ -5,7 +5,6 @@ from pydantic import BaseModel
 
 from swarms.tools import (
     BaseTool,
-    Runnable,
     StructuredTool,
     Tool,
     tool,
@@ -424,7 +423,7 @@ def mock_function(arg: str) -> str:
 
 
 # Example of a Runnable class for testing
-class MockRunnable(Runnable):
+class MockRunnable:
     # Define necessary methods and properties
     pass
 
