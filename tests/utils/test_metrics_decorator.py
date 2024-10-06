@@ -5,7 +5,7 @@ from unittest.mock import Mock
 import pytest
 
 # Imports from your project
-from swarms.utils import metrics_decorator
+from swarms.utils.metrics_decorator import metrics_decorator
 
 
 # Basic successful test

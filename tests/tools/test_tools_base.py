@@ -3,7 +3,7 @@ from unittest.mock import MagicMock
 import pytest
 from pydantic import BaseModel
 
-from swarms.tools.tool import (
+from swarms.tools import (
     BaseTool,
     Runnable,
     StructuredTool,

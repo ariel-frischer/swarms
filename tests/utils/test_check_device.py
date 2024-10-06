@@ -2,7 +2,7 @@ import logging
 
 import torch
 
-from swarms.utils import check_device
+from swarms.utils.check_device import check_device
 
 # For the purpose of the test, we're assuming that the `memory_allocated`
 # and `memory_reserved` function behave the same as `torch.cuda.memory_allocated`

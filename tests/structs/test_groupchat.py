@@ -1,7 +1,8 @@
 import pytest
 
 from swarm_models import OpenAIChat
-from swarm_models.anthropic import Anthropic
+# Remove or comment out the Anthropic import if it's not needed
+# from swarm_models.anthropic import Anthropic
 from swarms.structs.agent import Agent
 from swarms.structs.groupchat import GroupChat, GroupChatManager
 

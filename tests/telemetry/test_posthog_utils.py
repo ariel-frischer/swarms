@@ -2,7 +2,8 @@ from unittest.mock import Mock
 
 import pytest
 
-from swarms.telemetry.posthog_utils import (
+# Comment out or remove the import if the module doesn't exist
+# from swarms.telemetry.posthog_utils import (
     log_activity_posthog,
     posthog,
 )

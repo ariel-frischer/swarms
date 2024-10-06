@@ -3,7 +3,7 @@ import unittest
 
 from swarm_models import OpenAIChat
 from swarms.structs import Agent, Task
-from swarms.structs.team import Team
+from swarms.structs import Team
 
 
 class TestTeam(unittest.TestCase):

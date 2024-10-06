@@ -3,7 +3,9 @@ from unittest.mock import Mock, create_autospec
 import pytest
 
 from swarm_models import OpenAIChat
-from swarms.structs import RecursiveWorkflow, Task
+from swarms.structs import Task
+# Import RecursiveWorkflow from the correct module
+from swarms.structs.recursive_workflow import RecursiveWorkflow
 
 
 def test_add():
