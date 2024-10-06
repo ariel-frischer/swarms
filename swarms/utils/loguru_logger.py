@@ -1,8 +1,11 @@
 import os
+import sys
 from dotenv import load_dotenv
 from loguru import logger
 
 load_dotenv()
+
+print("Current PYTHONPATH:", sys.path)
 
 WORKSPACE_DIR = os.getenv("WORKSPACE_DIR", os.getcwd())
 
