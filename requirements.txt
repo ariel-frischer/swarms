@@ -31,4 +31,4 @@ networkx
 swarms-memory
 pre-commit
 aiofiles
-swarm-models
+swarm-models==0.1.0

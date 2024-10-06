@@ -75,7 +75,7 @@ swarms-memory = "*"
 black = "*"
 swarms-cloud = "*"
 aiofiles = "*"
-swarm-models = "*"
+swarm-models = "0.1.0"
 numpy = "1.26.4"
 
 [tool.poetry.group.lint.dependencies]
