@@ -5,11 +5,9 @@ from unittest.mock import patch
 import pytest
 
 from swarm_models import OpenAIChat
+from swarms.structs.task import Task
 from swarms.structs.agent import Agent
-from swarms.structs.sequential_workflow import (
-    SequentialWorkflow,
-    Task,
-)
+from swarms.structs.sequential_workflow import SequentialWorkflow
 
 # Mock the OpenAI API key using environment variables
 os.environ["OPENAI_API_KEY"] = "mocked_api_key"
