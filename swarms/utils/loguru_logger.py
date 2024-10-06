@@ -4,20 +4,22 @@ from loguru import logger
 
 load_dotenv()
 
-WORKSPACE_DIR = os.getenv("WORKSPACE_DIR")
+WORKSPACE_DIR = os.getenv("WORKSPACE_DIR", os.getcwd())
+
+def get_log_path(file_path: str) -> str:
+    return os.path.join(WORKSPACE_DIR, file_path)
 
 logger.add(
-    os.path.join(WORKSPACE_DIR, "swarms.log"),
+    get_log_path("swarms.log"),
     level="INFO",
     colorize=True,
     backtrace=True,
     diagnose=True,
 )
 
-
 def loguru_logger(file_path: str = "swarms.log"):
     return logger.add(
-        os.path.join(WORKSPACE_DIR, file_path),
+        get_log_path(file_path),
         level="INFO",
         colorize=True,
         backtrace=True,
